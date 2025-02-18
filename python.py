@@ -14,4 +14,7 @@ def deckOfCards():
 print(stack)
 return(stack)
 """
-
+colours = ['Yellow', 'Red', 'Blue', 'Green']
+def deckOfCards():
+    for colour in colours:
+        for 
