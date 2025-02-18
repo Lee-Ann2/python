@@ -17,8 +17,9 @@ def deckOfCards():
             cards = '{} {}'.format(colour, number)
             stack.append(cards)
         for superCard in superCards:
-            cards = '{}{}'.format(colour, superCard)
+            cards = '{} {}'.format(colour, superCard)
             stack.append(cards)
     print(stack)
     return(stack)
 deckOfCards()
+
