@@ -23,3 +23,27 @@ def deckOfCards():
     return(stack)
 deckOfCards()
 
+def drawingCards():
+    cardsToDraw = []
+    for x in range(numCards):
+        cardsToDraw.append(deckOfCards)
+
+num_of_players = []
+players = input('enter number of players')
+for num_of_players in range(players):
+    num_of_players.append(drawingCards(8))
+#Enter the condition in here
+
+turn = 0
+direction = 0
+playing =True
+
+def options(player, playersOptions):
+    print('player {}'.format(player))
+    for cards in playersOptions:
+        print(cards)
+    print(cards)
+
+while playing:
+    options(turn, num_of_players[turn])
+    print('pile: {}'.format(remove[-1]))
