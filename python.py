@@ -25,6 +25,7 @@ deckOfCards()
 
 def drawingCards():
     cardsToDraw = []
+    numCards = 0
     for x in range(numCards):
         cardsToDraw.append(deckOfCards)
 
@@ -34,15 +35,15 @@ for num_of_players in range(players):
     num_of_players.append(drawingCards(8))
 #Enter the condition in here
 
-turn = 0
-direction = 0
-playing =True
-
 def options(player, playersOptions):
     print('player {}'.format(player))
     for cards in playersOptions:
         print(cards)
     print(cards)
+
+turn = 0
+direction = 0
+playing =True
 
 while playing:
     options(turn, num_of_players[turn])
