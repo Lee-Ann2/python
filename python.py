@@ -35,6 +35,7 @@ num_of_players = []
 players = input('enter number of players')
 for num_of_players in range(players):
     num_of_players.append(drawingCards(8))
+    
 #Enter the condition in here
 
 def options(player, playersOptions):
