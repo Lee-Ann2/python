@@ -94,9 +94,9 @@ such as You really like bananas!
 '''
 fruits = ['apples', 'banana', 'kiwi', 'orange', 'pear', 'raspberry']
 
-for 'apple' in fruits:
+if 'apple' in fruits:
     print('You really like apples')
-for 'banana' in fruits:
+if 'banana' in fruits:
     print('You really like bananas')
-for 'kiwi' in fruits:
+if 'kiwi' in fruits:
     print('You really like kiwis')
