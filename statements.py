@@ -118,4 +118,5 @@ usernames = ['jaden', 'john', 'jane', 'doe', 'admin', 'bravo', 'charlie']
 for username in usernames:
     if username == 'admin':
         print('Hello, Admin mfethu.')
-    
+    else:
+        print(f'Hello, {usernames}')
