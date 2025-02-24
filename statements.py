@@ -131,6 +131,7 @@ message is printed.
 '''
 
 users = ['admin', 'other', 'user', 'and', 'another', 'one']
+users[:] = []
 if users == []:
     print('More users')
 else:
