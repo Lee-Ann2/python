@@ -119,4 +119,4 @@ for username in usernames:
     if username == 'admin':
         print('Hello, Admin mfethu.')
     else:
-        print(f'Hello, {usernames}')
+        print(f'Hello, {username}')
