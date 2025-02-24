@@ -156,7 +156,7 @@ current_users containing the lowercase versions of all existing users.)
 current_users = ['alpha', 'bravo', 'charlie', 'john', 'jane', 'doe']
 new_users = ['bravo', 'John', 'Jane', 'admin', 'Name']
 for new_user in new_users:
-    if new_users == current_users:
+    if new_user == current_users:
         print('User exist')
     else:
         print('User is available')
