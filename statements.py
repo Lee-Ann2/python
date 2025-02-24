@@ -92,7 +92,7 @@ is in your list. If the fruit is in your list, the if block should print a state
 such as You really like bananas!
 
 '''
-fruits = ['apples', 'banana', 'kiwi', 'orange', 'pear', 'raspberry']
+fruits = ['apple', 'banana', 'kiwi', 'orange', 'pear', 'raspberry']
 
 if 'apple' in fruits:
     print('You really like apples')
@@ -100,3 +100,22 @@ if 'banana' in fruits:
     print('You really like bananas')
 if 'kiwi' in fruits:
     print('You really like kiwis')
+
+
+'''
+5-8. Hello Admin: Make a list of five or more usernames, including the name
+'admin'. Imagine you are writing code that will print a greeting to each user
+after they log in to a website. Loop through the list, and print a greeting to
+each user:
+•	 If the username is 'admin', print a special greeting, such as Hello admin,
+would you like to see a status report?
+•	 Otherwise, print a generic greeting, such as Hello Jaden, thank you for
+logging in again.
+
+'''
+usernames = ['jaden', 'john', 'jane', 'doe', 'admin', 'bravo', 'charlie']
+
+for username in usernames:
+    if username == 'admin':
+        print('Hello, Admin mfethu.')
+    
