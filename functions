@@ -2,3 +2,10 @@
 def greeting():
     print('Hello')
 greeting()
+
+#Passing information to the function
+
+def user(username):
+    print(f'Hello, {username.title()}')
+user('Khazi')
+
