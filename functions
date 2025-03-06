@@ -25,3 +25,143 @@ favorite books is Alice in Wonderland. Call the function, making sure to
 include a book title as an argument in the function call.
 
 '''
+def book(title):
+    print(f'favourite book: {title.title()}')
+book('alice in wonderland')
+
+'''
+8-3. T-Shirt: Write a function called make_shirt() that accepts a size and the
+text of a message that should be printed on the shirt. The function should print
+a sentence summarizing the size of the shirt and the message printed on it.
+Call the function once using positional arguments to make a shirt. Call the
+function a second time using keyword arguments.
+
+'''
+
+def make_shirt(size='34', message='KYS'):
+    print(f'size:{size} with the message:{message}')
+make_shirt()
+
+
+'''
+8-4. Large Shirts: Modify the make_shirt() function so that shirts are large
+by default with a message that reads I love Python. Make a large shirt and a
+medium shirt with the default message, and a shirt of any size with a different
+message.
+
+'''
+
+
+def shirts(message, size='large'):
+    if size == 'medium':
+        print('Okay you piece of bacon')
+    elif size == 'small':
+        print('Have you tried food?')
+    else:
+        print(f'{message} and your size is {size}')
+shirts('I love python')
+
+'''
+8-5. Cities: Write a function called describe_city() that accepts the name of
+a city and its country. The function should print a simple sentence, such as
+Reykjavik is in Iceland. Give the parameter for the country a default value.
+Call your function for three different cities, at least one of which is not in the
+default country.
+
+'''
+
+def city(name='Tokyo', country='South Africa'):
+    print(f'{name} is the city located in {country}')
+city('Cape Town')
+city('Durban')
+city('Queenstown')
+
+#Returning a value
+
+def fullname(name, surname):
+    fullname = f'{name} {surname}'
+    return fullname.title()
+person = fullname('jesse', 'pinkman')
+print(person)
+
+# Functions and Loops
+
+'''
+8-6. City Names: Write a function called city_country() that takes in the name
+of a city and its country. The function should return a string formatted like this:
+"Santiago, Chile"
+Call your function with at least three city-country pairs, and print the
+values that are returned.
+
+'''
+
+def country(city, country):
+    city_country = f'{city}, {country}'
+    print(city_country.title())
+country('Cape Town', 'South Africa')
+country('Tokyo', 'Japan')
+country('Rome', 'Italy')    
+
+'''
+8-7. Album: Write a function called make_album() that builds a dictionary
+describing a music album. The function should take in an artist name and an
+album title, and it should return a dictionary containing these two pieces of
+information. Use the function to make three dictionaries representing different
+albums. Print each return value to show that the dictionaries are storing the
+album information correctly.
+Use None to add an optional parameter to make_album() that allows you to
+store the number of songs on an album. If the calling line includes a value for
+the number of songs, add that value to the album’s dictionary. Make at least
+one new function call that includes the number of songs on an album.
+
+'''
+
+
+
+
+'''
+8-8. User Albums: Start with your program from Exercise 8-7. Write a while
+loop that allows users to enter an album’s artist and title. Once you have that
+information, call make_album() with the user’s input and print the dictionary
+that’s created. Be sure to include a quit value in the while loop.
+
+'''
+
+#Functions and Lists
+#Passing a list
+
+'''
+def greet_users(names):
+"""Print a simple greeting to each user in the list."""
+for name in names:
+msg = f"Hello, {name.title()}!"
+print(msg)
+u usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+'''
+
+
+'''
+8-9. Messages: Make a list containing a series of short text messages. Pass the
+list to a function called show_messages(), which prints each text message.
+
+'''
+
+def show_message(messages):
+    for message in messages:
+        note = f'{message.title()}'
+        print(note)
+msgs = ['this is a message', 'so is this one', 'this one too', 'yeah and this one']
+show_message(msgs)
+
+'''
+8-10. Sending Messages: Start with a copy of your program from Exercise 8-9.
+Write a function called send_messages() that prints each text message and
+moves each message to a new list called sent_messages as it’s printed. After
+calling the function, print both of your lists to make sure the messages were
+moved correctly.
+
+'''
+
+def send_message()
